@@ -273,9 +273,9 @@ Cacti成功运行需要PHP和PHP的各种依赖包。
     php-pdo php-pear php-snmp php-process \
     php-xml php-zip php-fpm
     ```
-
----
-注意: 只有当您的Web服务器是Nginx时，才需要使用**php-fpm**
+    
+    ---
+	注意: 只有当您的Web服务器是Nginx时，才需要使用**php-fpm**
 
 2. 在PHP.ini文件中配置时区。
 
@@ -354,10 +354,10 @@ systemctl start snmpd
 1. 从[Cacti Web Site](https://www.cacti.net/download_cacti.php)下载Cacti源代码
 
     ```console
-       cd /tmp
-       wget https://www.cacti.net/downloads/cacti-1.y.z.tar.gz
-       tar -zxvf cacti-1.y.z.tar.gz
-       mv -v cacti-1.y.z /usr/share/nginx/html/cacti
+    cd /tmp
+    wget https://www.cacti.net/downloads/cacti-1.y.z.tar.gz
+    tar -zxvf cacti-1.y.z.tar.gz
+    mv -v cacti-1.y.z /usr/share/nginx/html/cacti
     ```
 
 2. 编辑`config.php` 文件
@@ -369,16 +369,16 @@ systemctl start snmpd
 3. 使用自己定义的数据更新 `database_` 字段. 本节仅适用于主Cacti服务器
 
     ```php
-        $database_type     = 'mysql';
-        $database_default  = 'your_cacti_database';
-        $database_hostname = 'localhost';
-        $database_username = 'your_cacti_username';
-        $database_password = 'your_cacti_password';
-        $database_port     = '3306';
-        $database_ssl      = false;
-        $database_ssl_key  = '';
-        $database_ssl_cert = '';
-        $database_ssl_ca   = '';
+    $database_type     = 'mysql';
+    $database_default  = 'your_cacti_database';
+    $database_hostname = 'localhost';
+    $database_username = 'your_cacti_username';
+    $database_password = 'your_cacti_password';
+    $database_port     = '3306';
+    $database_ssl      = false;
+    $database_ssl_key  = '';
+    $database_ssl_cert = '';
+    $database_ssl_ca   = '';
     ```
 
 4. 将cookie域设置为与网站域名匹配
@@ -410,10 +410,10 @@ systemctl start snmpd
     在/tmp目录下下载源代码并解压它。
 
     ```console
-       cd /tmp
-       wget https://www.cacti.net/downloads/spine/cacti-spine-1.y.z.tar.gz
-       tar -zxvf cacti-spine-1.y.z.tar.gz
-       cd cacti-spine-1.y.z
+    cd /tmp
+    wget https://www.cacti.net/downloads/spine/cacti-spine-1.y.z.tar.gz
+    tar -zxvf cacti-spine-1.y.z.tar.gz
+    cd cacti-spine-1.y.z
     ```
 
 3. 运行`configure`脚本并编译安装spine
