@@ -156,6 +156,7 @@ MySQL是1995年创建的最早的开源SQL数据库服务器，现在由Oracle�
    下面的`[mysqld]`部分是一个基本配置。安装程序将根据实际系统提供建议。
    
    ```shell
+[mysqld]
    character-set-server=utf8mb4
    collation-server=utf8mb4_unicode_ci
    innodb_file_format = Barracuda
@@ -323,7 +324,7 @@ yum install -y net-snmp net-snmp-utils
    cd cacti-spine-1.y.z
    ```
    
-3. 运行`configure`脚本并编译安装spine.
+3. 运行`configure`脚本并编译安装spine
 
    ```console
    # ./configure
