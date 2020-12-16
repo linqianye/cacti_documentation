@@ -156,7 +156,7 @@ MySQL是1995年创建的最早的开源SQL数据库服务器，现在由Oracle�
    下面的`[mysqld]`部分是一个基本配置。安装程序将根据实际系统提供建议。
    
    ```shell
-[mysqld]
+   [mysqld]
    character-set-server=utf8mb4
    collation-server=utf8mb4_unicode_ci
    innodb_file_format = Barracuda
@@ -210,8 +210,8 @@ MySQL是1995年创建的最早的开源SQL数据库服务器，现在由Oracle�
    Query OK, 0 rows affected (0.00 sec)
    MariaDB [(none)]> GRANT ALL PRIVILEGES ON cacti.* TO 'your_cacti_username'@'localhost';
    Query OK, 0 rows affected (0.00 sec)
-   ```
-   
+```
+
 4. 授权Cacti账号访问MySQL时区表的权限
 
    ```sql
@@ -272,8 +272,8 @@ yum install -y net-snmp net-snmp-utils
    wget https://www.cacti.net/downloads/cacti-1.y.z.tar.gz
    tar -zxvf cacti-1.y.z.tar.gz
    mv -v cacti-1.y.z /var/www/html/cacti
-   ```
-   
+```
+
 2. 编辑`config.php` 文件
 
    ```console
@@ -281,20 +281,20 @@ yum install -y net-snmp net-snmp-utils
    ```
 
 3. 使用自己定义的数据更新 `database_` 字段. 本节仅适用于主Cacti服务器
- 
-```php
-    $database_type     = 'mysql';
-    $database_default  = 'your_cacti_database';
-    $database_hostname = 'localhost';
-    $database_username = 'your_cacti_username';
-    $database_password = 'your_cacti_password';
-    $database_port     = '3306';
-    $database_ssl      = false;
-    $database_ssl_key  = '';
-    $database_ssl_cert = '';
-    $database_ssl_ca   = '';
+
+    ```php
+        $database_type     = 'mysql';
+        $database_default  = 'your_cacti_database';
+        $database_hostname = 'localhost';
+        $database_username = 'your_cacti_username';
+        $database_password = 'your_cacti_password';
+        $database_port     = '3306';
+        $database_ssl      = false;
+        $database_ssl_key  = '';
+        $database_ssl_cert = '';
+        $database_ssl_ca   = '';
     ```
-    
+
 4. 创建定时任务文件
 
    创建并编辑 `/etc/cron.d/cacti` 文件。
@@ -314,16 +314,16 @@ yum install -y net-snmp net-snmp-utils
    ```
 
 2. 从[Cacti Web Site](https://www.cacti.net/spine_download.php) 下载spine的源代码
-   
-在/tmp目录下下载源代码并解压它。
-   
-```console
-   cd /tmp
-   wget https://www.cacti.net/downloads/spine/cacti-spine-1.y.z.tar.gz
-   tar -zxvf cacti-spine-1.y.z.tar.gz
-   cd cacti-spine-1.y.z
-   ```
-   
+
+   在/tmp目录下下载源代码并解压它。
+
+    ```console
+       cd /tmp
+       wget https://www.cacti.net/downloads/spine/cacti-spine-1.y.z.tar.gz
+       tar -zxvf cacti-spine-1.y.z.tar.gz
+       cd cacti-spine-1.y.z
+    ```
+
 3. 运行`configure`脚本并编译安装spine
 
    ```console
