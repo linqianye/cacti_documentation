@@ -236,7 +236,7 @@ VALUES ('localhost', 'mysql', 'cactiuser', 'time_zone_name', 'root@localhost', '
 6. 在Cacti的目录上设置适当的权限确保能够生成图形和日志。您应该在Cacti的目录中执行这些命令来更改权限。
    
    ```sh
-shell> chown -R cactiuser rra/ log/ cache/
+   shell> chown -R cactiuser rra/ log/ cache/
    ```
    
    （输入Cacti用户的有效用户名，此用户也将在下一步中用于数据收集。)
