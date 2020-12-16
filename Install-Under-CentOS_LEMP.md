@@ -192,8 +192,8 @@ MySQL是1995年创建的最早的开源SQL数据库服务器，现在由Oracle�
 
     下面的`[mysqld]`部分是一个基本配置。安装程序将根据实际系统提供建议。
 
-```shell
-[mysqld]
+    ```shell
+    [mysqld]
     character-set-server=utf8mb4
     collation-server=utf8mb4_unicode_ci
     max_allowed_packet=18M
@@ -210,7 +210,7 @@ MySQL是1995年创建的最早的开源SQL数据库服务器，现在由Oracle�
     slow-query-log                 = 1
     slow-query-log-file            = /var/log/mysql/mysql-slow.log
     ```
-    
+
 2. 重启MySQL/MariaDB服务
 
     ```console
@@ -242,13 +242,13 @@ MySQL是1995年创建的最早的开源SQL数据库服务器，现在由Oracle�
    ```
 
 3. 授权Cacti账号访问Cacti数据库的权限，使用你自定义的数据替换`your_cacti_username`和 `your_cacti_password` 
- 
-```sql
-    MariaDB [(none)]> GRANT ALL PRIVILEGES ON cacti.* TO 'your_cacti_username'@'localhost' IDENTIFIED BY
-    'your_cacti_password';
-    Query OK, 0 rows affected (0.00 sec)
+
+    ```sql
+        MariaDB [(none)]> GRANT ALL PRIVILEGES ON cacti.* TO 'your_cacti_username'@'localhost' IDENTIFIED BY
+        'your_cacti_password';
+        Query OK, 0 rows affected (0.00 sec)
     ```
-    
+
 4. 授权Cacti账号访问MySQL时区表的权限
 
     ```sql
@@ -352,14 +352,14 @@ systemctl start snmpd
 以下步骤是基本的手动下载、安装和配置Cacti的知识。
 
 1. 从[Cacti Web Site](https://www.cacti.net/download_cacti.php)下载Cacti源代码
- 
-```console
-   cd /tmp
-   wget https://www.cacti.net/downloads/cacti-1.y.z.tar.gz
-   tar -zxvf cacti-1.y.z.tar.gz
-   mv -v cacti-1.y.z /usr/share/nginx/html/cacti
-   ```
-   
+
+    ```console
+       cd /tmp
+       wget https://www.cacti.net/downloads/cacti-1.y.z.tar.gz
+       tar -zxvf cacti-1.y.z.tar.gz
+       mv -v cacti-1.y.z /usr/share/nginx/html/cacti
+    ```
+
 2. 编辑`config.php` 文件
 
     ```console
@@ -367,20 +367,20 @@ systemctl start snmpd
     ```
 
 3. 使用自己定义的数据更新 `database_` 字段. 本节仅适用于主Cacti服务器
- 
-```php
-    $database_type     = 'mysql';
-    $database_default  = 'your_cacti_database';
-    $database_hostname = 'localhost';
-    $database_username = 'your_cacti_username';
-    $database_password = 'your_cacti_password';
-    $database_port     = '3306';
-    $database_ssl      = false;
-    $database_ssl_key  = '';
-    $database_ssl_cert = '';
-    $database_ssl_ca   = '';
+
+    ```php
+        $database_type     = 'mysql';
+        $database_default  = 'your_cacti_database';
+        $database_hostname = 'localhost';
+        $database_username = 'your_cacti_username';
+        $database_password = 'your_cacti_password';
+        $database_port     = '3306';
+        $database_ssl      = false;
+        $database_ssl_key  = '';
+        $database_ssl_cert = '';
+        $database_ssl_ca   = '';
     ```
-    
+
 4. 将cookie域设置为与网站域名匹配
 
     ```console
@@ -406,16 +406,16 @@ systemctl start snmpd
    ```
 
 2. 从[Cacti Web Site](https://www.cacti.net/spine_download.php) 下载spine的源代码
- 
-在/tmp目录下下载源代码并解压它。
-   
-```console
-   cd /tmp
-   wget https://www.cacti.net/downloads/spine/cacti-spine-1.y.z.tar.gz
-   tar -zxvf cacti-spine-1.y.z.tar.gz
-   cd cacti-spine-1.y.z
-   ```
-   
+
+    在/tmp目录下下载源代码并解压它。
+
+    ```console
+       cd /tmp
+       wget https://www.cacti.net/downloads/spine/cacti-spine-1.y.z.tar.gz
+       tar -zxvf cacti-spine-1.y.z.tar.gz
+       cd cacti-spine-1.y.z
+    ```
+
 3. 运行`configure`脚本并编译安装spine
 
    ```console
