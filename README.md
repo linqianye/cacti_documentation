@@ -44,11 +44,11 @@ Cacti 基于 GNU GPL授权:
 
    本节介绍了Cacti组件及其用途，并提供了一些示例，包括如何在Cacti中创建**模板**。
    
-3. [进阶操作](README.md#advanced-operations)
+3. [进阶操作](README.md#进阶操作)
 
    本节介绍更高级的资料，例如使用高级数据收集和在**模板**中使用替换变量，等等。
 
-4. [插件开发](README.md#plugin-development)
+4. [插件开发](README.md#插件开发)
 
    本节包含所有与插件开发相关的信息。指南，钩子，参考资料等。更多信息可以在[Cacti论坛](https://forums.cacti.net/viewforum.php?f=6)找到。
    
@@ -56,11 +56,11 @@ Cacti 基于 GNU GPL授权:
 
    本节包含几个主题的“How To”。
 
-6. [Contributing](README.md#contributing)
+6. [Contributing](README.md#贡献)
 
    本节介绍有关如何为Cacti做出贡献的信息。
 
-7. [Development Standards](README.md#development-standards)
+7. [Development Standards](README.md#开发标准)
 
    本节介绍如何确保对所有贡献使用相同标准的相关信息。应当指出的是，不合规并不意味着变更提议会被自动排除。
 
