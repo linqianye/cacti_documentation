@@ -244,11 +244,10 @@ MySQL是1995年创建的最早的开源SQL数据库服务器，现在由Oracle�
 3. 授权Cacti账号访问Cacti数据库的权限，使用你自定义的数据替换`your_cacti_username`和 `your_cacti_password` 
 
     ```sql
-        MariaDB [(none)]> GRANT ALL PRIVILEGES ON cacti.* TO 'your_cacti_username'@'localhost' IDENTIFIED BY
-        'your_cacti_password';
-        Query OK, 0 rows affected (0.00 sec)
+    MariaDB [(none)]> GRANT ALL PRIVILEGES ON cacti.* TO 'your_cacti_username'@'localhost' IDENTIFIED BY 'your_cacti_password';
+    Query OK, 0 rows affected (0.00 sec)
     ```
-
+    
 4. 授权Cacti账号访问MySQL时区表的权限
 
     ```sql
@@ -424,10 +423,10 @@ systemctl start snmpd
    config/install-sh -c -d '/usr/local/spine/bin'
    /bin/sh ./libtool   --mode=install /usr/bin/install -c spine '/usr/local/spine/bin'
    libtool: install: /usr/bin/install -c spine /usr/local/spine/bin/spine
-    config/install-sh -c -d '/usr/local/spine/etc'
+   config/install-sh -c -d '/usr/local/spine/etc'
    /usr/bin/install -c -m 644 spine.conf.dist '/usr/local/spine/etc'
    config/install-sh -c -d '/usr/local/spine/share/man/man1'
-    /usr/bin/install -c -m 644 spine.1 '/usr/local/spine/share/man/man1'
+   /usr/bin/install -c -m 644 spine.1 '/usr/local/spine/share/man/man1'
    ```
 
 4. 编辑spine.conf
