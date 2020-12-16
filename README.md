@@ -90,7 +90,7 @@ Cacti 基于 GNU GPL授权:
 
 7. [在FreeBSD上升级Cacti](Upgrading-Cacti-Under-FreeBSD.md)
 
-### Cacti 概述
+### Cacti概述
 
 1. 概况
 
