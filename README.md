@@ -36,11 +36,11 @@ Cacti 基于 GNU GPL授权:
 
 ## 目录
 
-1. [安装Cacti](README.md#cacti-installation)
+1. [安装Cacti](README.md#安装Cacti)
 
    本节包含有关如何安装和升级Cacti系统的信息。它涵盖了在正常情况下使系统正常工作所需的前提、支持的平台和步骤。
    
-2. [Cacti概述](README.md#cacti-overview)
+2. [Cacti概述](README.md#Cacti概述)
 
    本节介绍了Cacti组件及其用途，并提供了一些示例，包括如何在Cacti中创建**模板**。
    
@@ -90,7 +90,7 @@ Cacti 基于 GNU GPL授权:
 
 7. [在FreeBSD上升级Cacti](Upgrading-Cacti-Under-FreeBSD.md)
 
-### Cacti 概述
+### Cacti概述
 
 1. 概况
 
