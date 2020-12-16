@@ -14,7 +14,7 @@
    
 2. 备份除RRD文件外的旧的Cacti目录。
    
-```sh
+   ```sh
    shell> tar --exclude=*.rrd -zcf cacti_backup_YYYYMMDD.tgz cacti
    ```
    
@@ -33,14 +33,14 @@
 5. 在Cacti的目录上设置适当的权限确保能够生成图形和日志。您应该在Cacti的目录中执行这些命令来更改权限。
    
    ```sh
-shell> chown -R cactiuser rra/ log/
+   shell> chown -R cactiuser rra/ log/
    ```
    
    （输入Cacti用户的有效用户名，此用户也将在下一步中用于数据收集。)
 
 6. 如果您正在使用可选功能Performance->Image Caching，请重新创建文件夹并更正权限。
    
- ```sh
+    ```sh
     shell> mkdir cache
     shell> chown -R cactiuser cache
     ```
