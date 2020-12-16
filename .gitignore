@@ -1,0 +1,13 @@
+# Ignore vim swap files
+*.swp
+# Ignore any mac DS_Store files
+.DS_Store
+# Ignore build HTML output
+html/*
+# Ignore local test filese
+footer.html
+include/*
+manual/*
+# Ignore any CertBot files
+.well-known
+.well-known/*
