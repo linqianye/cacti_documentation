@@ -90,8 +90,8 @@
 ```sh
   pkg install cacti
   pkg install spine
-  ```
-  
+```
+
 - FreeBSD ports - 编译会持续很长时间，但没有固定的依赖关系（请参阅如何使用端口）
   
   ```sh
@@ -240,13 +240,13 @@ VALUES ('localhost', 'mysql', 'cactiuser', 'time_zone_name', 'root@localhost', '
    $database_password = "cacti";
 ```
 
-6. 在Cacti的目录上设置适当的权限以生成图形/日志。您应该在Cacti的目录中执行这些命令来更改权限。
+6. 在Cacti的目录上设置适当的权限确保能够生成图形和日志。您应该在Cacti的目录中执行这些命令来更改权限。
    
    ```sh
 shell> chown -R cactiuser rra/ log/ cache/
    ```
    
-   (输入Cacti用户的有效用户名，此用户也将在下一步中用于数据收集。)
+   （输入Cacti用户的有效用户名，此用户也将在下一步中用于数据收集。)
 
 7. 创建一个新的文件 `/etc/cron.d/cacti` 并将他加入到计划任务:
 
@@ -266,7 +266,7 @@ shell> chown -R cactiuser rra/ log/ cache/
 
    安装完成后，您可以将权限更改为更严格的设置。
 
-9. 将您的web浏览器指向:
+9. 浏览器登录Cacti网站首页:
 
    `http://<your-server>/cacti/`
 

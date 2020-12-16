@@ -40,15 +40,15 @@ Cacti 基于 GNU GPL授权:
 
    本节包含有关如何安装和升级Cacti系统的信息。它涵盖了在正常情况下使系统正常工作所需的前提、支持的平台和步骤。
    
-2. [Cacti概述](README.md#Cacti概述)
+2. [Cacti概述](README.md#cacti-overview)
 
    本节介绍了Cacti组件及其用途，并提供了一些示例，包括如何在Cacti中创建**模板**。
    
-3. [进阶操作](README.md#进阶操作)
+3. [进阶操作](README.md#advanced-operations)
 
    本节介绍更高级的资料，例如使用高级数据收集和在**模板**中使用替换变量，等等。
 
-4. [插件开发](README.md#插件开发)
+4. [插件开发](README.md#plugin-development)
 
    本节包含所有与插件开发相关的信息。指南，钩子，参考资料等。更多信息可以在[Cacti论坛](https://forums.cacti.net/viewforum.php?f=6)找到。
    
@@ -56,11 +56,11 @@ Cacti 基于 GNU GPL授权:
 
    本节包含几个主题的“How To”。
 
-6. [Contributing](README.md#贡献)
+6. [Contributing](README.md#contributing)
 
    本节介绍有关如何为Cacti做出贡献的信息。
 
-7. [Development Standards](README.md#开发标准)
+7. [Development Standards](README.md#development-standards)
 
    本节介绍如何确保对所有贡献使用相同标准的相关信息。应当指出的是，不合规并不意味着变更提议会被自动排除。
 
@@ -90,11 +90,11 @@ Cacti 基于 GNU GPL授权:
 
 7. [在FreeBSD上升级Cacti](Upgrading-Cacti-Under-FreeBSD.md)
 
-### Cacti概述
+### Cacti 概述
 
 1. 概况
 
-   1.1. [用户界面导航](Navigating-The-User-Interface.md)
+   1.1. [图形化界面总览](Navigating-The-User-Interface.md)
 
    1.2. [操作原则](Principles-of-Operation.md)
 
