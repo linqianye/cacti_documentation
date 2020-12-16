@@ -95,7 +95,7 @@
 - FreeBSD ports - 编译会持续很长时间，但没有固定的依赖关系（请参阅如何使用端口）
   
   ```sh
-portsnap fetch extract
+  portsnap fetch extract
   portsnap fetch update
   cd /usr/ports/databases/mariadb102-server (or mysql57-server)
   make install
@@ -126,13 +126,6 @@ chmod +s /usr/local/bin/spine
 大多数其他PHP配置都是由基本操作系统自动完成的，所以这里不需要讨论这个问题。
 
 ## 配置Webserver (Apache)
-
-Most Linux/UNIX OS' automatically configure the Web Server to allow PHP content.
-So there should be no need to provide additional configuration.  However, the
-following section is included below for reference in the case that you are
-running a UNIX version that does not properly configure the Webserver properly.
-The documentation below is written specifically for RHEL and variants.  So, the
-instructions may vary.
 
 大多数Linux/UNIX操作系统会自动配置Web服务器以允许PHP内容。所以不需要提供额外的配置。但是，下面包含以下部分以供参考，以防您运行的UNIX版本没有正确配置Web服务器。
 
