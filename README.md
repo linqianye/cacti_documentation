@@ -96,7 +96,7 @@ Cacti 基于 GNU GPL授权:
 
    1.1. [图形化界面总览](Navigating-The-User-Interface.md)
 
-   1.2. [操作原则](Principles-of-Operation.md)
+   1.2. [工作原理](Principles-of-Operation.md)
 
    1.3. [图形概述](Graph-Overview.md)
 
@@ -104,7 +104,7 @@ Cacti 基于 GNU GPL授权:
 
    1.5. [查看图形](Viewing-Graphs.md)
 
-   1.6. [绘制单个SNMP OID](Graph-a-Single-SNMP-OID.md)
+   1.6. [绘制单个SNMP OID图](Graph-a-Single-SNMP-OID.md)
 
 2. 管理
 
